@@ -20,13 +20,8 @@ def ToDoc(lis,peo,n):
         for m in range(peo):
             for j in range(n):
                 h=str(j+1)
-<<<<<<< HEAD
                 print('python src/run_video_output.py --video activity/{0}/p{1}/{2}.avi --output activity/data/{0}/p{1}/{2}.txt'.format(lis[i],m+1,h.zfill(2)),file=doc)
     doc.close()          #循环创建全部指令，输出至文件
-=======
-                print('python src/run_video_output.py --video {3}/{0}/p{1}/{2}.avi --output {3}/data/{0}/p{1}/{2}.txt'.format(lis[i],m+1,h.zfill(2),MFolder),file=doc)
-    doc.close()          #循环
->>>>>>> f4a6b7aa0f98e4435dd74e7a942a265a147ea5d5
 
 def ReadDoc():
     result=[]
